@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <div class="originData">Diljale</div>
-    <p id="autoFillData">klkl</p>
+    <div id="originData">My HTML text</div>
+    <p id="autoFillData"></p>
 
     <script>
-        document.getElementById('autoFillData').innerHTML = valueOf(document.getElementById("originData"))
+        const myValue = document.getElementById('originData').textContent;
+        document.getElementById("autoFillData").innerHTML = document.getElementById('originData').textContent
     </script>
 </body>
 

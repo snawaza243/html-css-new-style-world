@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <title>Document</title>
 </head>
@@ -19,14 +19,16 @@
 
     <style>
 
- 
+
     </style>
     <script>
         function copy(text, target) {
             setTimeout(function () {
                 $('#copied_tip').remove();
-            }, 800);
-            $(target).append("<div class='tip bg-danger card mt-2' id='copied_tip'>Copied!</div>");
+            }, 500);
+            $(target).append(
+                "<div class='tip bg-info card mt-2 mb-2' id='copied_tip' style='background-color: #38a3f5;  width: 80px;  margin:  2px 0;  color: white; border-radius: 5px ; ''>Copied!</div>"
+                );
             var input = document.createElement('input');
             input.setAttribute('value', text);
             document.body.appendChild(input);
@@ -54,12 +56,32 @@
         </div>
     </div> -->
 
-    <div  class="d-flex justify-content-between align-items-top m-3 container bg-light card">
-        <span class="text-line me-2 top-0" id="myCopyText">Getting copy</span>
-        <button
-            onclick="copy(getElementById('myCopyText').textContent,'#copy_button_1')"
-            id="copy_button_1" class="btn btn-sm btn-success copy-button mt-2">
-            Copy
+    <div style="
+    align-items: top;
+    justify-content: between;
+    background-color: #08a96e; 
+    width: 100px; 
+    margin:  2px 5px; 
+    color: white;
+    border-radius: 5px ;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    color: #000;
+    display: inline-flex;
+    
+    ">
+        <span class="text-line me-2 top-0" id="myCopyText">This text is going to copy.</span>
+        <button onclick="copy(getElementById('myCopyText').textContent,'#copy_button_1')" id="copy_button_1"
+            class=" copy-button " style="
+            background-color: #08a96e; 
+            width: 100px; 
+            margin:  2px 0; 
+            color: white;
+            border-radius: 5px ;
+            border: 1px solid rgb(24, 24, 24);            
+            ">
+            Copy Code
         </button>
     </div>
 
