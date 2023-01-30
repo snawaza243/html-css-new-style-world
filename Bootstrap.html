@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        {/* container */}
+        <div class="container  p-5 my-5 border ">
+            <h1>My First Bootstrap Page</h1>
+            <p>This container has a border and some extra padding and margins.</p>
+        </div>
+
+        <div class="container p-5 my-5 bg-dark text-white">
+            <h1>My First Bootstrap Page</h1>
+            <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+        </div>
+
+        <div class="container p-5 my-5 bg-primary text-white">
+            <h1>My First Bootstrap Page</h1>
+            <p>This container has a blue background color and a white text, and some extra padding and margins.</p>
+        </div>
+
+        {/* container with element */}
+        <p className="container border p-5 my-5 bg-success  h3">Container with paragraph</p>
+
+        {/* grid in bootstrap */}
+        <div className='container-fluid mt-3 '>
+            <h1>Bootstrap 5 Grid System column</h1>
+            <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.</p>
+            <p>If you do not want to use all 12 columns individually, you can group the columns together to create wider
+                columns</p>
+
+        </div>
+
+        {/* Equal columns */}
+        <div class="container-fluid mt-3">
+            <h1>Three equal width columns</h1>
+            <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width
+                columns.</p>
+            <div class="row">
+                <div class="col p-3 bg-primary text-white">.col</div>
+                <div class="col p-3 bg-dark text-white">.col</div>
+                <div class="col p-3 bg-primary text-white">.col</div>
+            </div>
+        </div>
+
+        {/* responsive columns */}
+        <div class="container-fluid mt-3">
+            <h1>Responsive Columns</h1>
+            <p>Resize the browser window to see the effect.</p>
+            <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+            <div class="row">
+                <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+                <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+                <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+                <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+            </div>
+        </div>
+
+        {/* Unequal Responsive Columns */}
+        <div class="container-fluid mt-3">
+            <h1>Two Unequal Responsive Columns</h1>
+            <p>Resize the browser window to see the effect.</p>
+            <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+            <div class="row">
+                <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
+                <div class="col-sm-8 p-3 bg-dark text-white">.col</div>
+            </div>
+        </div>
+
+        {/* typographic */}
+        <div class="container mt-3">
+            <p>The font-size of each Bootstrap heading depends on the screen size. Try to resize the browser window to
+                see the effect.</p>
+            <h1>h1 heading</h1>
+            <h2>h2 heading</h2>
+            <h3>h3 heading</h3>
+            <h4>h4 heading</h4>
+            <h5>h5 heading</h5>
+            <h6>h6 heading</h6>
+        </div>
+
+        <div class="container mt-3">
+            <p class="h1">h1 Bootstrap heading</p>
+            <p class="h2">h2 Bootstrap heading</p>
+            <p class="h3">h3 Bootstrap heading</p>
+            <p class="h4">h4 Bootstrap heading</p>
+            <p class="h5">h5 Bootstrap heading</p>
+            <p class="h6">h6 Bootstrap heading</p>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Display Headings</h1>
+            <p>Display headings are used to stand out more than normal headings (larger font-size and lighter
+                font-weight):</p>
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+            <h1 class="display-3">Display 3</h1>
+            <h1 class="display-4">Display 4</h1>
+            <h1 class="display-5">Display 5</h1>
+            <h1 class="display-6">Display 6</h1>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Smaller, Secondary Text</h1>
+            <p>The small element (and the .small class) is used to create a smaller, secondary text in any heading:</p>
+            <h1>h1 heading <small>secondary text</small></h1>
+            <h2>h2 heading <small>secondary text</small></h2>
+            <h3>h3 heading <small>secondary text</small></h3>
+            <h4>h4 heading <small>secondary text</small></h4>
+            <h5>h5 heading <small>secondary text</small></h5>
+            <h6>h6 heading <small>secondary text</small></h6>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Highlight Text</h1>
+            <p>Use the mark element (or the .mark class) to <mark>highlight</mark> text.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Abbreviations</h1>
+            <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Blockquotes</h1>
+            <p>The blockquote element is used to present content from another source:</p>
+            <blockquote class="blockquote">
+                <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                    organization, WWF works in 100 countries and is supported by 1.2 million members in the United
+                    States and close to 5 million globally.</p>
+                <footer class="blockquote-footer">From WWF's website</footer>
+            </blockquote>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Description Lists</h1>
+            <p>The dl element indicates a description list:</p>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+            </dl>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Code Snippets</h1>
+            <p>Inline snippets of code should be embedded in the code element:</p>
+            <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a
+                section in a document.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Keyboard Inputs</h1>
+            <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+            <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Multiple Code Lines</h1>
+            <p>For multiple lines of code, use the pre element:</p>
+            <pre>
+          Text in a pre element
+          is displayed in a fixed-width
+          font, and it preserves
+          both spaces and
+          line breaks.
+        </pre>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p>Use the .lead class to make a paragraph "stand out":</p>
+            <p class="lead">This paragraph stands out.</p>
+            <p>This is a regular paragraph.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p class="text-start">Left-aligned text.</p>
+            <p class="text-end">Right-aligned text.</p>
+            <p class="text-center">Center-aligned text.</p>
+            <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Text break / Word break</h2>
+            <p>The .text-break class prevents long text from breaking layout.</p>
+            <p>With .text-break:</p>
+            <p class="text-break">
+                AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+            </p>
+            <p>Without .text-break:</p>
+            <!-- uncomment to see without text break -->
+            <!-- <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p> -->
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p class="text-start">Left-aligned text.</p>
+            <p class="text-end">Right-aligned text.</p>
+            <p class="text-center">Center-aligned text.</p>
+            <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Text Decoration</h2>
+            <p>Use the .text-decoration-none class to remove the underline from a link.</p>
+            <a href="https://www.indiantechnoera.in" class="text-decoration-none">A link without underline.</a>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p class="text-start">Left-aligned text.</p>
+            <p class="text-end">Right-aligned text.</p>
+            <p class="text-center">Center-aligned text.</p>
+            <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p class="text-lowercase">Lowercased text.</p>
+            <p class="text-uppercase">Uppercased text.</p>
+            <p class="text-capitalize">Capitalized text.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>
+            <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly
+                smaller abbr)</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children
+                only):</p>
+            <ul class="list-unstyled">
+                <li>Coffee</li>
+                <li>Tea
+                    <ul>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                    </ul>
+                </li>
+                <li>Milk</li>
+            </ul>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p>The class .list-inline places all list items on a single line, when used together with the
+                .list-inline-item:</p>
+            <ul class="list-inline ">
+                <li class="list-inline-item ">Coffee</li>
+                <li class="list-inline-item">Tea</li>
+                <li class="list-inline-item">Milk</li>
+            </ul>
+        </div>
+
+
+
+
+
+        {/* text color */}
+        <div class="container-fluid mt-3">
+            <div class="container mt-3">
+                <h2>Contextual Colors</h2>
+                <p>Use the contextual classes to provide "meaning through colors":</p>
+                <p class="text-muted">This text is muted.</p>
+                <p class="text-primary">This text is important.</p>
+                <p class="text-success">This text indicates success.</p>
+                <p class="text-info">This text represents some information.</p>
+                <p class="text-warning">This text represents a warning.</p>
+                <p class="text-danger">This text represents danger.</p>
+                <p class="text-secondary">Secondary text.</p>
+                <p class="text-dark">This text is dark grey.</p>
+                <p class="text-body">Default body color (often black).</p>
+                <p class="text-light">This text is light grey (on white background).</p>
+                <p class="text-white">This text is white (on white background).</p>
+            </div>
+
+            {/* text color optic bg */}
+            <div class="container mt-3">
+                <h2>Opacity Text Colors</h2>
+                <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+                <p class="text-black-50">Black text with 50% opacity on white background</p>
+                <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Contextual Backgrounds</h2>
+            <p>Use the contextual background classes to provide "meaning through colors".</p>
+            <div class="bg-primary p-3"></div>
+            <div class="bg-success p-3"></div>
+            <div class="bg-info p-3"></div>
+            <div class="bg-warning p-3"></div>
+            <div class="bg-danger p-3"></div>
+            <div class="bg-secondary p-3"></div>
+            <div class="bg-dark p-3"></div>
+            <div class="bg-light p-3"></div>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Background Color with Contrasting Text Color</h2>
+            <p class="text-bg-primary">This text is important.</p>
+            <p class="text-bg-success">This text indicates success.</p>
+            <p class="text-bg-info">This text represents some information.</p>
+            <p class="text-bg-warning">This text represents a warning.</p>
+            <p class="text-bg-danger">This text represents danger.</p>
+            <p class="text-bg-secondary">Secondary background color.</p>
+            <p class="text-bg-dark">Dark grey background color.</p>
+            <p class="text-bg-light">Light grey background color.</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Basic Table</h2>
+            <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Striped Rows</h2>
+            <p>The .table-striped class adds zebra-stripes to a table:</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Bordered Table</h2>
+            <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Hover Rows</h2>
+            <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Black/Dark Table</h2>
+            <p>The .table-dark class adds a black background to the table:</p>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Dark Striped Table</h2>
+            <p>Combine .table-dark and .table-striped to create a dark, striped table:</p>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Hoverable Dark Table</h2>
+            <p>The .table-hover class adds a hover effect (grey background color) on table rows:</p>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Borderless Table</h2>
+            <p>The .table-borderless class removes borders from the table:</p>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Table Head Colors</h2>
+            <p>You can use any of the contextual classes to only add a color to the table header:</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead class="table-success">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Small Table</h2>
+            <p>The .table-sm class makes the table smaller by cutting cell padding in half:</p>
+            <table class="table table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Contextual Classes</h2>
+            <p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be
+                used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active,
+                .table-secondary, .table-light and .table-dark:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Default</td>
+                        <td>Defaultson</td>
+                        <td>def@somemail.com</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Primary</td>
+                        <td>Joe</td>
+                        <td>joe@example.com</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>Success</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Danger</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Info</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Warning</td>
+                        <td>Refs</td>
+                        <td>bo@example.com</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>Active</td>
+                        <td>Activeson</td>
+                        <td>act@example.com</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>Secondary</td>
+                        <td>Secondson</td>
+                        <td>sec@example.com</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td>Light</td>
+                        <td>Angie</td>
+                        <td>angie@example.com</td>
+                    </tr>
+                    <tr class="table-dark">
+                        <td>Dark</td>
+                        <td>Bo</td>
+                        <td>bo@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container mt-3">
+            <h2>Responsive Table</h2>
+            <p>The .table-responsive class adds a scrollbar to the table when needed:</p>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Sex</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Anna</td>
+                            <td>Pitt</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>USA</td>
+                            <td>Female</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Class Screen width</p>
+            <p>.table-responsive-sm for 576px</p>
+            <p>.table-responsive-md for 768px</p>
+            <p>.table-responsive-lg for 992px</p>
+            <p>.table-responsive-xl for 1200px</p>
+            <p>.table-responsive-xxl for 1400px</p>
+        </div>
+
+
+        {/* Bootstrap 5 Images */}
+        <div class="container mt-3">
+            <h1>Bootstrap Image</h1>
+            <h2>Rounded Corners</h2>
+            <p>The .rounded class adds rounded corners to an image:</p>
+            <img src="https://rb.gy/jqkwu0" class="rounded" alt="Cinque Terre" width="304" height="236">
+        </div>
+
+        <div class="container mt-3">
+            <h2>Circle</h2>
+            <p>The .rounded-circle class shapes the image to a circle:</p>
+            <img src="https://rb.gy/jqkwu0" class="rounded-circle" alt="Cinque Terre" width="304" height="236">
+        </div>
+
+        <div class="container mt-3">
+            <h2>Thumbnail</h2>
+            <p>The .img-thumbnail class creates a thumbnail of the image:</p>
+            <img src="https://rb.gy/jqkwu0" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+        </div>
+
+        <div class="container mt-3">
+            <h2>Aligning images</h2>
+            <p>Use the float classes to float the image to the left or to the right:</p>
+            <img src="https://rb.gy/jqkwu0" class="float-start" alt="Pic" width="304" height="236">
+            <img src="https://rb.gy/jqkwu0" class="float-end" alt="Pic" width="304" height="236">
+        </div>
+        <div class="container mt-3">
+            <img src="https://rb.gy/jqkwu0" class="mx-auto d-block" style="width:50%">
+            <h2>Centered Image</h2>
+            <p>Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the
+                image:</p>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Image</h2>
+            <p>The .img-fluid class makes the image scale nicely to the parent element (resize the browser window to see
+                the effect):</p>
+            <img class="img-fluid" src="https://rb.gy/jqkwu0" alt="Pic" width="1100" height="500">
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Example of Jumbotron</h2>
+            <div class="mt-4 p-5 bg-primary text-white rounded">
+                <h1>Jumbotron Example</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat..</p>
+            </div>
+        </div>
+
+        <!-- Bootstrap Alert -->
+
+        <div class="container mt-3">
+            <h2>Alerts</h2>
+            <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+            <div class="alert alert-success">
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info">
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            </div>
+            <div class="alert alert-primary">
+                <strong>Primary!</strong> Indicates an important action.
+            </div>
+            <div class="alert alert-secondary">
+                <strong>Secondary!</strong> Indicates a slightly less important action.
+            </div>
+            <div class="alert alert-dark">
+                <strong>Dark!</strong> Dark grey alert.
+            </div>
+            <div class="alert alert-light">
+                <strong>Light!</strong> Light grey alert.
+            </div>
+        </div>
+
+        <!-- Bootstrap Alert link -->
+        <div class="container mt-3">
+            <h2>Alert Links</h2>
+            <p>Add the alert-link class to any links inside the alert box to create "matching colored links".</p>
+            <div class="alert alert-success">
+                <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-info">
+                <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-primary">
+                <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-secondary">
+                <strong>Secondary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-dark">
+                <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-light">
+                <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+        </div>
+
+        <!-- Bootstrap with Closing button -->
+
+        <div class="container mt-3">
+            <h2>Alerts</h2>
+            <p>The button with class="btn-close" and data-bs-dismiss="alert" is used to close the alert box.</p>
+            <p>The alert-dismissible class aligns the button to the right.</p>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            </div>
+            <div class="alert alert-primary alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Primary!</strong> Indicates an important action.
+            </div>
+            <div class="alert alert-secondary alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Secondary!</strong> Indicates a slightly less important action.
+            </div>
+            <div class="alert alert-dark alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Dark!</strong> Dark grey alert.
+            </div>
+            <div class="alert alert-light alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Light!</strong> Light grey alert.
+            </div>
+        </div>
+
+        <!-- Animated alert -->
+        <div class="container mt-3">
+            <h2>Animated Alerts</h2>
+            <p>The .fade and .show classes adds a fading effect when closing the alert message.</p>
+            <div class="alert alert-success alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+            </div>
+            <div class="alert alert-warning alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            </div>
+            <div class="alert alert-primary alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Primary!</strong> Indicates an important action.
+            </div>
+            <div class="alert alert-secondary alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Secondary!</strong> Indicates a slightly less important action.
+            </div>
+            <div class="alert alert-dark alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Dark!</strong> Dark grey alert.
+            </div>
+            <div class="alert alert-light alert-dismissible fade show">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Light!</strong> Light grey alert.
+            </div>
+        </div>
+
+        <!-- Bootstrap Buttons -->
+
+        <div class="display-1 text-center">Button</div>
+        <div class="container mt-3">
+            <h2>Button Styles</h2>
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+
+        </p>
+        <div class="container mt-3">
+            <h2>Button Elements</h2>
+            <p>The button classes can be used on a, button, or input elements:
+                <a href="#" class="btn btn-success">Link Button</a>
+                <button type="button" class="btn btn-success">Button</button>
+                <input type="button" class="btn btn-success" value="Input Button">
+                <input type="submit" class="btn btn-success" value="Submit Button">
+                <input type="reset" class="btn btn-success" value="Reset Button">
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Button Outline</h2>
+            <p>Bootstrap 5 also provides eight outline/bordered buttons. Move the mouse over them to see an additional
+                "hover" effect:</p>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+            <button type="button" class="btn btn-outline-light text-dark">Light</button>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Button Sizes</h2>
+            <p>Use the .btn-lg class for large buttons or .btn-sm class for small buttons:</p>
+            <button type="button" class="btn btn-primary btn-lg">Large</button>
+            <button type="button" class="btn btn-primary btn-md">Default</button>
+            <button type="button" class="btn btn-primary btn-sm">Small</button>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Block Level Buttons</h2>
+            <p>To create a block level button that spans the entire width of the parent element, use the .d-grid
+                "helper" class on the parent element:</p>
+            <div class="d-grid">
+                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Block Level Buttons</h2>
+            <p>If you have many block-level buttons, you can control the space between them with the .gap-* class:</p>
+            <div class="d-grid gap-3">
+                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Button States</h2>
+            <p>A button can be set to an active (appear pressed) or a disabled (unclickable) state: The class .active
+                makes a button appear pressed, and the disabled attribute makes a button unclickable. Note that <a>
+                    elements do not support the disabled attribute and must therefore use the .disabled class to make it
+                    visually appear disabled.</p>
+            <button type="button" class="btn btn-primary">Primary Button</button>
+            <button type="button" class="btn btn-primary active">Active Primary</button>
+            <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+            <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Spinner Buttons</h2>
+            <p>Add spinners to buttons:</p>
+
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+            </button>
+
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..
+            </button>
+
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..
+            </button>
+
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Loading..
+            </button>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Button Group</h2>
+            <p>Use a <div> element with class .btn-group to create a button group:</p>
+            <p>The .btn-group class creates a button group:</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-3">
+            <h2>Button Groups Sizes</h2>
+            <p>Add class .btn-group-* to size all buttons in a button group.</p>
+            <h3>Large Buttons:</h3>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+            <hr>
+            <h3>Default Buttons:</h3>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+            <hr>
+            <h3>Small Buttons:</h3>
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Vertical Button Group</h2>
+            <p>Use the .btn-group-vertical class to create a vertical button group:</p>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Button Group</h2>
+            <p>Button groups are "inline" by default, which makes them appear side by side when you have multiple
+                groups:</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">BMW</button>
+                <button type="button" class="btn btn-primary">Mercedes</button>
+                <button type="button" class="btn btn-primary">Volvo</button>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <h2>Nesting Button Groups</h2>
+            <p>Nest button groups to create dropdown menus:</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown">Sony</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Tablet</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap 5 Badges -->
+
+
+        <div class="container mt-3">
+            <h2>Badges</h2>
+            <p>Use the .badge class together with a contextual class (like .bg-secondary) within <span> elements to
+                    create rectangular badges. Note that badges scale to match the size of the parent element (if any):
+            </p>
+            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+            <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+            <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+            <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+            <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+            <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+        </div>
+
+
+
+        <div class="container mt-3">
+            <h2>Contextual Badges</h2>
+            <span class="badge bg-primary">Primary</span>
+            <span class="badge bg-secondary">Secondary</span>
+            <span class="badge bg-success">Success</span>
+            <span class="badge bg-danger">Danger</span>
+            <span class="badge bg-warning">Warning</span>
+            <span class="badge bg-info">Info</span>
+            <span class="badge bg-light">Light</span>
+            <span class="badge bg-dark">Dark</span>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Pill Badges</h2>
+            <span class="badge rounded-pill bg-primary">Primary</span>
+            <span class="badge rounded-pill bg-secondary">Secondary</span>
+            <span class="badge rounded-pill bg-success">Success</span>
+            <span class="badge rounded-pill bg-danger">Danger</span>
+            <span class="badge rounded-pill bg-warning">Warning</span>
+            <span class="badge rounded-pill bg-info">Info</span>
+            <span class="badge rounded-pill bg-light">Light</span>
+            <span class="badge rounded-pill bg-dark">Dark</span>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Badge inside a Button</h2>
+            <button type="button" class="btn btn-primary">
+              Messages <span class="badge bg-danger">4</span>
+            </button>
+            <button type="button" class="btn btn-danger">
+              Notifications <span class="badge bg-dark">7</span>
+            </button>
+          </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
