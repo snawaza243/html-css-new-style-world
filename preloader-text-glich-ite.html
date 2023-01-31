@@ -13,9 +13,9 @@
     <div class='preloader'>
         <h1 class="admin-text-anim">IndianTechnoEra</h1>
         <div class='dots-container'>
-            <div class='dot red' />
-            <div class='dot yellow' />
-            <div class='dot green' />
+            <div class='dot red' ></div>
+            <div class='dot yellow' ></div>
+            <div class='dot green' ></div>
             <div class='preloader-text'>
                 Loading...
             </div>
@@ -125,8 +125,7 @@
 
         .admin-text-anim {
             font-size: 40px;
-            font-weight: 800;
-            outline: none;
+            font-weight: 900;
             background: linear-gradient(135deg,
                     var(--color-saffron1) 0%,
                     var(--color-white1) 10%,
@@ -141,13 +140,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: animate 25s linear infinite;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-transform: unset;
-            -webkit-text-stroke: 1px black;
         }
 
         @keyframes animate {
-            to {
+            from {
                 background-position: 400%;
             }
         }
