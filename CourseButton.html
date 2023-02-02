@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            --color-myGreen: #1bdb94;
+            --color-white: #fff;
+            --color-black: #000;
+
+        }
+
+        .FeedCourseBox {
+            display: flex;
+            font-display: row;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: start;
+        }
+
+        .ucFeedCs {
+            background-color: var(--color-myGreen);
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: var(--color-white);
+            font-size: 22px;
+            cursor: pointer;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            margin: 5px;
+        }
+
+        .ucFeedCs:hover {
+            box-shadow: 0 0 5px var(--color-myGreen);
+            transition: ease-in-out 0.3s;
+        }
+
+        .ucFeedCs:active {
+            color: var(--color-black);
+        }
+
+        .ucFeedCs a {
+            text-decoration: none;
+            color: var(--color-white);
+        }
+    </style>
+    <div class="FeedCourseBox">
+
+        <button class="ucFeedCs"><a href="#">Web Dev</a></button>
+    </div>
+
+</body>
+
+</html>

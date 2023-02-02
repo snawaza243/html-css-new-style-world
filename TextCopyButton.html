@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta content="author" data="sam">
 
     <title>Document</title>
 </head>
@@ -15,20 +15,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"></script>
-    <p style="text-align: center;">CopyBox Testing<br /></p>
+    <p style="text-align: center;">Copy Box Button<br /></p>
 
     <style>
 
 
     </style>
     <script>
+        document.title = "TextCopyButton"
+
         function copy(text, target) {
             setTimeout(function () {
                 $('#copied_tip').remove();
             }, 500);
             $(target).append(
                 "<div class='tip bg-info card mt-2 mb-2' id='copied_tip' style='background-color: #38a3f5;  width: 80px;  margin:  2px 0;  color: white; border-radius: 5px ; ''>Copied!</div>"
-                );
+            );
             var input = document.createElement('input');
             input.setAttribute('value', text);
             document.body.appendChild(input);
@@ -81,7 +83,7 @@
             border-radius: 5px ;
             border: 1px solid rgb(24, 24, 24);            
             ">
-            Copy Code
+            Copy Text
         </button>
     </div>
 
