@@ -1,0 +1,132 @@
+<includable id="main">
+	<ul class="mnMn" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		<!-- Left navigation nav bar -->
+		<if cond="!data:view.isHomepage">
+			<!-- [ Home link ] -->
+			<li class="hm">
+				<a class="a" expr:href="data:blog.homepageUrl.canonical" itemprop="url">
+					<include name="home-icon" />
+					<!-- [ Title navigation ] -->
+					<span class="n" itemprop="name">
+						<messages.home />
+					</span>
+				</a>
+			</li>
+		</if>
+		<!-- [ Dropdown style 1 ] -->
+		<li class="drp">
+			<input class="drpI hidden" id="drpDwn-1" name="drpDwn" type="checkbox" />
+			<label class="a" for="drpDwn-1">
+				<!-- [ Icon ] -->
+				<include name="folder-icon" />
+				<!-- [ Title navigation ] -->
+				<span class="n">
+					Sub menu
+				</span>
+				<include name="arow-down-icon" />
+			</label>
+			<ul>
+				<!-- [ Change attribute href='#' to add url ] -->
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 01
+					</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 02
+					</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 03
+					</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 04
+					</a>
+				</li>
+			</ul>
+		</li>
+		<!-- [ Dropdown style 1 ] -->
+		<li class="drp br">
+			<input class="drpI hidden" id="drpDwn-2" name="drpDwn" type="checkbox" />
+			<label class="a" for="drpDwn-2">
+				<!-- [ Icon ] -->
+				<include name="folder-icon" />
+				<!-- [ Title navigation ] -->
+				<span class="n">
+					Sub menu
+				</span>
+				<include name="arow-down-icon" />
+			</label>
+			<ul>
+				<!-- [ Change attribute href='#' to add url ] -->
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 05
+					</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 06
+					</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 07
+					</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">
+						Sub menu 08
+					</a>
+				</li>
+			</ul>
+		</li>
+		<!-- [ Standar menu ] -->
+		<li>
+			<!-- [ Change attribute href='#' to add url ] -->
+			<a class="a" href="#" itemprop="url">
+				<!-- [ Icon ] -->
+				<include name="profiles-icon" />
+				<!-- [ Title navigation ] -->
+				<span class="n" itemprop="name">
+					About
+				</span>
+			</a>
+		</li>
+		<!-- [ Standar menu ] -->
+		<li class="br">
+			<!-- [ Change attribute href='#' to add url ] -->
+			<a class="a" href="#" itemprop="url">
+				<!-- [ Icon ] -->
+				<include name="message-icon" />
+				<!-- [ Title navigation ] -->
+				<span class="n" itemprop="name">
+					Contact
+				</span>
+			</a>
+		</li>
+		<!-- [ Dropdown style 2 ] -->
+		<li class="drp mr br">
+			<input checked="checked" class="drpI hidden" id="drpMr-2" name="drpDwn" type="checkbox" />
+			<label class="a" for="drpMr-2">
+				<!-- [ Title navigation ] -->
+				<span class="n">
+					More...
+				</span>
+				<include name="arow-down-icon" />
+			</label>
+			<ul>
+				<!-- [ Change attribute href='#' to add url ] -->
+				<li itemprop="name">
+					<a class="new" expr:href="data:blog.homepageUrl.canonical params { hl: &quot;ar&quot; }" itemprop="url">
+						Try RTL Mode
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</includable>

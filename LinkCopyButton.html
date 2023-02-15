@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Link Copy</h1>
+
+        <p>Select the link text by clicking within the input then copy yourself or just click the copy button. Paste
+            into the paste side to see that it works!</p>
+        <div class="container">
+            <div class="copy">
+                <h3>Copy <span><i class="fa fa-hand-peace-o"></i></span></h3>
+                <form>
+                    <input type="text" value="https://codepen.io/she_codes/pen/OgrJJe/">
+                    <button type="button">Copy</button>
+                </form>
+            </div>
+            <div class="paste">
+                <h3>Paste <span><i class="fa fa-smile-o"></i></span></h3>
+                <form>
+                    <input type="text">
+                </form>
+            </div>
+        </div><!-- end .container -->
+    </div><!-- end .wrapper -->
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-size: 16px;
+            background: #FFD1DD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            padding: 0 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 1.2em;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: 'VT323', monospace;
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+            background: #FFA3BB;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 28px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h3 span {
+            display: inline-block;
+            position: relative;
+        }
+
+
+        .copy,
+        .paste {
+            flex-grow: 1;
+            width: 50%;
+        }
+
+        .copy {
+            border-right: 2px solid;
+            padding-right: 10px;
+
+        }
+
+        .copy h3 span {
+            background: #76ECFF;
+        }
+
+
+
+        .copy input {
+            padding-right: 90px;
+
+        }
+
+
+        .paste {
+            padding-left: 10px;
+        }
+
+        .paste h3 span {
+            background: #FAE916;
+        }
+
+        form {
+            position: relative;
+            width: 100%;
+        }
+
+        form input {
+            display: block;
+            width: 100%;
+            border: 3px solid;
+            outline: 0;
+            background: #FFF;
+            font-size: 25px;
+            padding: 5px 4px;
+            margin-bottom: 20px;
+
+        }
+
+
+        form button {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            border: 0;
+            outline: 0;
+            color: #FFF;
+            background: #000;
+            font-family: 'VT323', monospace;
+            font-size: 25px;
+            text-transform: uppercase;
+            padding: 0.08em 0.8em;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        (function () {
+            var copyButton = document.querySelector('.copy button');
+            var copyInput = document.querySelector('.copy input');
+            copyButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                var text = copyInput.select();
+                document.execCommand('copy');
+            });
+
+            copyInput.addEventListener('click', function () {
+                this.select();
+            });
+        })();
+    </script>
+</body>
+
+</html>

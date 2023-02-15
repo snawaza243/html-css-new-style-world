@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex-master">
+        <div class="flex-child1">Text</div>
+        <div class="flex-child1">Text</div>
+        <div class="flex-child1">Text</div>
+        <div class="flex-child1">Text</div>
+        <div class="flex-child1">Text</div>
+    </div>
+
+    <div class="grid-master">
+        <div class="grid-child1">Text</div>
+        <div class="grid-child1">Text</div>
+        <div class="grid-child1">Text</div>
+        <div class="grid-child1">Text</div>
+        <div class="grid-child1">Text</div>
+    </div>
+    <style>
+        .flex-master {
+            display: flex;
+        }
+
+        .flex-child1 {
+            background-color: rgb(20, 112, 241);
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+            flex-direction: row;
+            flex: content;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .grid-master {
+            display: grid;
+        }
+
+        .grid-child1 {
+            background-color: rgb(20, 112, 241);
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+            grid:initial;
+            
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+        }
+    </style>
+</body>
+
+</html>
